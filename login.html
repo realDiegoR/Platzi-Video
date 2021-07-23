@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+  </head>
+  <body>
+    <header class="header">
+      <img class="header__img" src="./img/logo.png" alt="Platzi Video">
+    </header>
+    <main class="login">
+      <section class="login__container">
+        <h2>Inicio sesión</h2>
+        <form class="login__form">
+          <input class="input" type="text" name="email" placeholder="Correo" required>
+          <input class="input" type="password" name="password" placeholder="Contraseña" required>
+          <input class="button" type="submit" value="Iniciar Sesión">
+          <div class="login__remember">
+            <label>
+              <input type="checkbox" id="checkbox1" value="checkbox">
+              Recuérdame
+            </label>
+            <a class="anchor" href="/">Olvidé mi contraseña</a>
+          </div>
+        </form>
+        <section class="login__social-media">
+          <p class="login__account"> <ion-icon name="logo-google"></ion-icon> Inicia sesión con Google</p>
+          <p class="login__account"> <ion-icon name="logo-twitter" ></ion-icon> Inicia sesión con twitter</p>
+        </section>
+        <section class="login__register">
+          <p>¿No tienes una cuenta? <a class="anchor" href="./signin.html">Regístrate</a></p>
+        </section>
+      </section>
+    </main>
+    <footer class="footer">
+      <a class="anchor" href="/">Términos y Condiciones</a>
+      <a class="anchor" href="/">Declaración de Privacidad</a>
+      <a class="anchor" href="/">Centro de Ayuda</a>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

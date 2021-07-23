@@ -1,0 +1,148 @@
+*{box-sizing: border-box; padding:0; margin:0;}
+html{
+  font-size: 62.5%;
+  min-height: 100%;
+  height: auto;
+}
+body{
+  background: linear-gradient(to bottom, #4000FF, #A100FF 17%, white 180%);
+  /* background: linear-gradient(120deg, #4000FF, #A100FF 50%, white 150%); */
+  /* background: linear-gradient(#FF8700, #FF8700, orangered); */
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.6rem;
+  background-attachment: fixed;
+}
+.header{
+  display: flex;
+  align-items: center;
+  height: 62px;
+  color: white
+  }
+.header__img{
+  width: 200px;
+  margin-left: 10px;
+}
+.login{
+  text-align: center;
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 25px;
+  box-shadow: 3px 3px 45px dimgrey;
+  margin: 50px auto 0;
+  width: 35%;
+  min-width: 400px;
+  padding: 30px 30px 20px;
+  font-size: 2.5rem;
+}
+.login__container{
+}
+.login__form{
+  margin: 10px 0 20px;
+}
+.input{
+  background: none;
+  border: 0;
+  border-bottom: 2px solid #4000FF;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-size: 2rem;
+  margin-top: 20px;
+  outline: none;
+  padding: 5px 15px;
+  width: 100%;
+  font-weight: bold;
+}
+::placeholder{
+  color: rgba(255,255,255,0.6);
+}
+.button{
+  background-color: rgba(255,255,255,.7);
+  border: 2px solid dodgerblue;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  transition: all 250ms;
+}
+.button:hover{
+  background-color: white;
+}
+.login__remember{
+  display: flex;
+  justify-content:space-around;
+  font-size: 1.6rem;
+  margin: 10px 0;
+}
+.anchor{
+  color: #4000FF;
+  font-weight: bolder;
+  text-decoration: none;
+}
+.anchor:hover{
+  text-decoration: underline;
+}
+.login__social-media{
+  font-size: 1.8rem;
+}
+.login__account{
+  margin: 5px 0;
+}
+.login__register{
+  text-align: center;
+  font-size: 1.6rem;
+  margin-top: 35px;
+}
+.login__social-media ion-icon{
+  color: white;
+  vertical-align: middle;
+  font-size: 24px;
+}
+.footer{
+  position: relative;
+  top: 55px;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+.footer a{
+  font-weight: bold;
+  margin: 0 20px 10px;;
+}
+
+@media (max-width:425px){
+  .login{
+    width: 80%;
+    min-width: 1px
+  }
+  .login__container{
+    font-size: 2rem;
+  }
+  .login__remember{
+    font-size: 1.4rem;
+    justify-content: space-between;
+  }
+  .login__social-media{
+    font-size: 1.5rem;
+  }
+  .footer{
+    position: absolute;
+    top: auto;
+    bottom: 10px;
+  }
+  .footer a{
+    font-size: 1.4rem;
+  }
+}
+@media (max-width:375px){
+  .footer{
+    position: sticky;
+    bottom: auto;
+    margin-top: 30px
+  }
+  .footer a{
+    font-size: 1.2rem;
+  }
+}
